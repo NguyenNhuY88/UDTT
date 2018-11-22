@@ -33,7 +33,7 @@ bool consistent(int row, int col, const vector<int>& queen)
     int k = queen.size();
     for (int i = 0; i < k; i++) {
         if (col == queen[i]) return false;
-        if (row == i) { cout <<"row = " << i << endl;return false;}
+       // if (row == i) { cout <<"row = " << i << endl;return false;}
         if (row+col == i+queen[i]) return false;
         if (row-col == i-queen[i]) return false;
     }
